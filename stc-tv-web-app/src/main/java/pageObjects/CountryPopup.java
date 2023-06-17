@@ -36,7 +36,7 @@ public class CountryPopup {
                 bahrain.click();
                 break;
         }
-        countryPopupCloseButton.click();
+//        countryPopupCloseButton.click();
     }
 
 

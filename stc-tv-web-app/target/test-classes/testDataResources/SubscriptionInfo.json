@@ -1,0 +1,56 @@
+[
+  {
+    "country" : "KSA",
+    "subscriptionPlans": [
+      {
+        "planTitle": "LITE",
+        "planPrice": "15 SAR/month"
+      },
+      {
+        "planTitle": "CLASSIC",
+        "planPrice": "25 SAR/month"
+      },
+      {
+        "planTitle": "PREMIUM",
+        "planPrice": "60 SAR/month"
+      }
+    ],
+    "planCurrency": "SAR/month"
+  },
+  {
+    "country" : "Kuwait",
+    "subscriptionPlans": [
+      {
+        "planTitle": "LITE",
+        "planPrice": "1.2 KWD/month"
+      },
+      {
+        "planTitle": "CLASSIC",
+        "planPrice": "2.5 KWD/month"
+      },
+      {
+        "planTitle": "PREMIUM",
+        "planPrice": "4.8 KWD/month"
+      }
+    ],
+    "planCurrency": "KWD/month"
+  },
+  {
+    "country" : "Bahrain",
+    "subscriptionPlans": [
+      {
+        "planTitle": "LITE",
+        "planPrice": "2 BHD/month"
+      },
+      {
+        "planTitle": "CLASSIC",
+        "planPrice": "3 BHD/month"
+      },
+      {
+        "planTitle": "PREMIUM",
+        "planPrice": "6 BHD/month"
+      }
+    ],
+    "planCurrency": "BHD/month"
+  }
+]

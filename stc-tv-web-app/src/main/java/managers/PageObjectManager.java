@@ -2,19 +2,19 @@ package managers;
 
 import org.openqa.selenium.WebDriver;
 import pageObjects.CountryPopup;
-import pageObjects.PlansPage;
+import pageObjects.SubscriptionPage;
 
 public class PageObjectManager {
     private WebDriver driver;
-    private PlansPage plansPage;
+    private SubscriptionPage subscriptionPage;
     private CountryPopup countryPopup;
 
     public PageObjectManager(WebDriver driver) {
         this.driver = driver;
     }
 
-    public PlansPage getPlansPage() {
-        return (plansPage == null) ? plansPage = new PlansPage(driver) : plansPage;
+    public SubscriptionPage getPlansPage() {
+        return (subscriptionPage == null) ? subscriptionPage = new SubscriptionPage(driver) : subscriptionPage;
     }
 
     public CountryPopup getCountryPage() {

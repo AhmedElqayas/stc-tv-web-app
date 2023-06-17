@@ -28,7 +28,7 @@ public class WebDriverManager {
                 driver = new FirefoxDriver();
                 break;
             case CHROME :
-                System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+                System.setProperty(CHROME_DRIVER_PROPERTY, FileReaderManager.getInstance().getConfigFileReader().getDriverPath());
                 driver = new ChromeDriver();
                 break;
         }

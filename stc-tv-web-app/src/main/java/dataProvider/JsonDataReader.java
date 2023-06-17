@@ -2,7 +2,7 @@ package dataProvider;
 
 import com.google.gson.Gson;
 import managers.FileReaderManager;
-import testDataTypes.Plan;
+import testDataTypes.Subscription;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -12,20 +12,20 @@ import java.util.Arrays;
 import java.util.List;
 
 public class JsonDataReader {
-    private final String plansFilePath = FileReaderManager.getInstance().getConfigFileReader().getTestDataResourcePath() + "Plans.json";
-    private List<Plan> plans;
+    private final String plansFilePath = FileReaderManager.getInstance().getConfigFileReader().getTestDataResourcePath() + "SubscriptionInfo.json";
+    private List<Subscription> subscriptions;
 
     public JsonDataReader() {
-        plans = getPlans();
+        subscriptions = getPlans();
     }
 
-    private List<Plan> getPlans() {
+    private List<Subscription> getPlans() {
         Gson gson = new Gson();
         BufferedReader bufferedReader = null;
         try {
             bufferedReader = new BufferedReader(new FileReader(plansFilePath));
-            Plan[] subscriptionPlans = gson.fromJson(bufferedReader, Plan[].class);
-            return Arrays.asList(subscriptionPlans);
+            Subscription[] subscriptionSubscriptions = gson.fromJson(bufferedReader, Subscription[].class);
+            return Arrays.asList(subscriptionSubscriptions);
         } catch (FileNotFoundException e) {
             throw new RuntimeException("Json file not found at path : " + plansFilePath);
         } finally {
@@ -37,7 +37,7 @@ public class JsonDataReader {
         }
     }
 
-    public List<Plan> getSubscriptionPlans() {
-        return plans;
+    public List<Subscription> getSubscriptionPlans() {
+        return subscriptions;
     }
 }
